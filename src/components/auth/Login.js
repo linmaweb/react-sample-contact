@@ -25,7 +25,6 @@ const Login = (props) => {
   });
 
   const { email, password } = user;
-
   const onChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
@@ -33,10 +32,7 @@ const Login = (props) => {
     if (email === "" || password === "") {
       setAlert("Please fill in all fields", "danger");
     } else {
-      login({
-        email,
-        password,
-      });
+      login({ email, password });
     }
   };
 
