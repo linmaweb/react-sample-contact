@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import axios from "axios";
-import ContactContext from "./contactContext";
-import contactReducer from "./contactReducer";
+import ContactContext from "../context/ContactContext";
+import contactReducer from "../reducers/contactReducer";
 import {
   GET_CONTACTS,
   ADD_CONTACT,
@@ -13,7 +13,7 @@ import {
   CLEAR_CONTACTS,
   CLEAR_FILTER,
   CONTACT_ERROR,
-} from "../types";
+} from "../reducers/types";
 
 const ContactState = (props) => {
   const initialState = {

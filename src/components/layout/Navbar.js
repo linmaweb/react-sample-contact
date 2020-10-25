@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import AuthContext from "../../context/auth/authContext";
-import ContactContext from "../../context/contact/contactContext";
+import AuthContext from "../../context/AuthContext";
+import ContactContext from "../../context/ContactContext";
 
 const Navbar = () => {
   const { isAuthenticated, logout, user, loadUser } = useContext(AuthContext);

@@ -7,9 +7,9 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import NotFound from "./components/pages/NotFound";
 import Alerts from "./components/layout/Alerts";
-import ContactState from "./context/contact/ContactState";
-import AuthState from "./context/auth/AuthState";
-import AlertState from "./context/alert/AlertState";
+import ContactState from "./providers/ContactState";
+import AuthState from "./providers/AuthState";
+import AlertState from "./providers/AlertState";
 
 const App = () => {
   return (
